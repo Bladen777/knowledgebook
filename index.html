@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Knowledgebook</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<br><br><div class="top_nav">
+	<a href="#html_nav">HTML</a>
+	<a href="#css_nav">CSS</a>
+	<a href="#js_nav">Javascript</a>
+	<a href="#DOM_nav">DOM</a>
+</div>	
+
+<div id="top" class="intro_box">
+<p class="intro_text">
+	KNOWLEDGEBOOK
+</p>	
+</div>
+
+
+	<button class="top_slide sliders"
+		 			onclick="top_function()"
+		 >
+		<p class="slide_txt">⮉</p>
+	</button>
+
+<script>
+function top_function(){
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}	
+</script>
+
+	<button class="bottom_slide sliders"
+		 			onclick="bottom_function()"
+		 >
+		<p class="slide_txt">⮋</p>
+	</button>
+
+	
+	<script>
+function bottom_function(){
+	document.body.scrollTop = 999999999999;
+	document.documentElement.scrollTop = 9999999999;
+}	
+</script>		
+
+<!-- useful extras -->
+<h1 class="dividers"> Usefull Extras </h1>
+
+<p><span class="titles">Isolating events with Google Inspect tool</span><br>
+	use <span class="highli"> $0; </span> to access selected elements on a webpage.</span>
+</p>
+
+<p><span class="titles"> Debugger Google Inspect tool</span><br>
+	<a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12383962#questions" target="_blank">Udemy</a>
+</p>
+
+<p><span class="titles">Content Delivery Network(CDN)</span><br>
+	Used to have website pieces accesible from different points around the world to provide the quickest loading site.<br>
+	Also caches the data if it's been looked up before.<br>
+</p>
+
+<!-- Frameworks-->
+<h1 class="dividers">Frameworks</h1>
+<p><span class="titles">BootStrap - CSS</span><br>
+	<a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">BootStrap</a><br>
+	<a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links" target="_blank">CDN Links</a><br>
+	
+</p><br><br>
+
+<p><span class="titles">JQuery - Java Script</span><br>
+
+</p>
+	
+<!-- HTML -->
+<h1 id="html_nav" class="dividers"> HTML </h1>
+
+<h1>header 1</h1>
+<h2>header 2</h2>
+<h3>header 3</h3>
+<h4>header 4</h4>
+<h5>header 5</h5>
+<h6>header 6</h6> 
+
+<!-- comments  -->
+
+<p> paragraphs </p>
+<p><em>Italisize</em></p>
+<p><strong>bold</strong></p> 
+
+<p> unicode characters ☆ ☞ </p>
+
+<ul> unordered lists
+  <li>list item</li>
+</ul>
+
+<ol> ordered lists
+  <li>list item</li>
+</ol>
+
+<!-- line break -->  
+<br>
+<!-- horizontal rule -->  
+<hr>
+  
+<img src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png" alt="image sample">  
+  
+  <a href="https://bradenkowalchuk.com/"> link</a>  
+  
+<table>
+  <thead>
+		<tr>
+			<th>tables</th>
+			<th>table header</th>
+		</tr>
+	</thead>	
+	<tbody>
+		<tr>
+			<td>table row</td>
+			<td>table row</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		
+	</tfoot>
+</table>  
+
+	<form>
+		<label> your name </label>
+		<input type="text" name="" value="">
+		<input type="button"> <br>
+		<input type="checkbox"><br>
+		<input type="color"><br>
+		<input type="date"><br>
+		<input type="datetime-local"><br>
+		<input type="email"><br>
+		<input type="file"><br>
+		<input type="hidden"><br>
+		<input type="image"><br>
+		<input type="month"><br>
+	  <input type="number"><br>
+		<input type="password"><br>
+		<input type="radio"><br>
+		<input type="range"><br>
+		<input type="reset"><br>
+		<input type="search"><br>
+		<input type="submit"><br>
+	  <input type="tel"><br>
+	  <input type="text"><br>
+	  <input type="time"><br>
+	  <input type="url"><br>
+	  <input type="week"><br>
+		<textarea name="name" rows="10" cols="30"></textarea>
+	</form>	
+
+<p> <span class="titles"> Quotes </span> <br>
+	when using quotes within quotes, single quotes are used as the internal set of quotes.<br>
+	example:<br>
+	onload="alert('Hello');"
+
+<p> <span class="titles"> HTML Attributes </span><br>
+	CLASS<br>
+	SRC<br>
+	href<br>
+	etc.
+
+	
+<!-- CSS -->	
+	
+<h1 id="css_nav" class="dividers"> CSS </h1>
+
+<!-- THE LINK FOR CSS -->
+
+<p> 
+	<span class="titles">external link</span> <br> 
+	link rel="stylesheet" href="css/styles.css"<br>
+	you'll want to put this at the top of the index page so the styles are loaded and applied before the content. otherwise content will get generated without styles immidiatly.<br><br>
+	<span class="titles">internal link</span> <br>
+	 &ltstyle&gt  <br> 
+		 body{color:red;}<br>
+		.div{color.red;}<br>
+	&lt/style&gt <br>
+	<span class="titles">inline link</span> <br>
+	style="color:red;"
+</p>
+	
+<div class="bg_color">
+		<p> background colour </p>
+</div>
+	
+<div class="text_color">
+		<p> text colour </p>
+</div>
+	
+	<hr class="horizontal_rule_styling">
+
+<p><span class="titles">Selectors</span><br>
+	selectors are the objects that are being adjusted in CSS.<br>
+	examples:<br>
+	body<br>
+	.class_name<br>
+	#id_name<br>
+</p>
+
+<p><span class="titles">Selector Cascade</span><br>
+	The level in which a style will affect the appearance goes as follows, with 1 being the highest rule:<br>
+	<span class="titles_h2">4. Position</span><br>
+	ex: li {color:red; color:blue;}<br>
+	2. red<br>
+	1. blue<br><br>
+	<span class="titles_h2">3. Specificity</span><br>
+	ex: &ltli id="first-id" class="first-class" draggable&gt<br>
+	4. li{color:blue}<br>
+	3. .first-class {color:red;}<br>
+	2. li[draggable] {color:purple;}<br>
+	1. #first-id {color:orange;}<br><br>
+	<span class="titles_h2">2. Type </span><br>
+	3. external<br>
+	2. internal<br>
+	1. inline<br><br>
+	<span class="titles_h2">1. Importance</span><br>
+	ex: color: green !important;<br>
+</p>
+<p><span class="titles">Combining Selectors</span><br>
+	can be used with any elements, not just classes!<br><br>
+	<span class="titles_h2">Universal Selector</span><br>
+	*<br>
+	the universal selector selects all the elements.<br><br>
+	<span class="titles_h2">Group Selectors</span><br>
+	ex: class_name, class_name_2{<br>
+	color:red;<br>
+	}<br>
+	This will cause the color red to be applied to both classes.<br><br>
+	
+	<span class="titles_h2">Child Selector</span><br>
+	ex: parent_class > child_class{<br>
+	color:firebrick;<br>
+	}<br>
+	This is used to modify the styles of the second selector that are the direct children of the first.<br><br>
+
+	<span class="titles_h2">Descendent Selector</span><br>
+	ex:ancestor_class_name descendent_class_name_lower{<br>
+	color:blue;<br>
+	}<br>
+	This is used to select a specific target that has a ancestor with the first selector.<br><br>
+	
+	<span class="titles_h2">Chaining Selectors</span><br>	
+	ex:class_1class_2div{<br>
+	color:seasgreen<br>
+	}<br>
+	This would only target a element that has the class names "class_1" & "class_2" as well as the "p" tag.
+</p>
+	
+<div class="sizing">
+	<p> SIZING <br> 16px=12pt=1em=100% <br><br>
+		Pixels (px) and points (pt) are static sizes and won't change with with web browser font size viewing. They also are unaffected by the parent font size settings. Pixels are also the most precise unit.<br><br>
+		Percentage (%) and "em" are dynamic and will change with the web browser font size settings. However, the size is adding with the parent's font size and will result in a larger font size than intended. <br><br>
+	Use "rem" (root em) as much as possible as it's size is unnafectd by the parent's font size setting. </p>
+</div>
+	
+<div class="block_display">
+	<p class="block_display_item"> BLOCK DISPLAY <br>
+	take up the entire width of the screen by default. <br>
+	common block elements include: </p> 
+	<ul>
+		<li class="block_display_item">paragraphs (< p >) </li> 
+		<li class="block_display_item"> headers (< h >) 	</li>
+		<li class="block_display_item"> divisions	(< div >) </li>
+		<li class="block_display_item"> lists & list items (< ol >),(< ul >), and (< li >) </li>
+		<li class="block_display_item"> forms (< form >)</li>
+	</ul>
+</div>	
+
+<div class="span_ex">
+	<p> this is an example of a sadasd<span class="span_ex_2">span</span>asdijn, span's are inline elements </p>	
+</div>	
+
+<div class="inline_display">
+	<p class="inline_display_item">INLINE DISPLAY <br> take up only the width & 	height of the content, however the width cannot be changed. also break 			lists <br> common Inline elements are: 
+	</p>
+	<ul>
+		<li class="inline_display_item">spans (< span >)</li>
+		<li class="inline_display_item">images (< img >)</li>
+		<li class="inline_display_item">anchors (< a >)</li>
+	</ul>	
+</div>	
+			
+<div class="inline_block_display">
+	<p class="inline_block_item"> INLINE-BLOCK DISPLAY <br>
+	the best of both worlds, items stacked inline but sizing is still 					adjustable. 
+	</p>
+	<ul>
+		<li class="inline_block_item">
+			item
+		</li>
+				<li class="inline_block_item">
+			item
+		</li>
+				<li class="inline_block_item">
+			item
+		</li>
+	</ul>
+</div>
+			
+<div class="none_display">
+	<p> NONE DISPLAY <br>
+		If something needs to be hidden on the webpage <br> display:none <br>can be used. This will basically remove the element from the webpage until it's display property is changed. <br>
+		An alternative is to use <br>
+		visibility:hidden <br>
+		This will hide the content of the element from the webpage but the box will still occupy the space.
+	</p>
+</div>
+			
+<div class="parent_ex">
+		<p class="child_1"> the box is the parent, and the paragraph is the <span class="child_2"> child </span>. children sit on top of the parents.
+	</p>
+</div>	
+	
+<div class="static_position">
+		<p> the default position is static, this is based on just the html code </p>
+</div>
+
+<div class="relative_pos_box">
+		 <p>RELATIVE POSITION<br>is the position relative to it's default position. <br>
+			 if the window is resized then the box will shift down if there is no room on the line, and the parent will not resize with the box on it's own. <br>
+			 Therefore, this method should not be used on it's own for positioning.
+		</p>
+	
+	<div class="rel_pos_guide_box">
+		<div class="rel_pos">
+			<p>position 1 <br>default </p>
+		</div>	
+
+		<div class="rel_pos">
+				<p>position 2 <br>default</p>
+		</div>
+
+		<div class="rel_pos">
+			<p>position 3<br>default</p>
+		</div>	
+	</div>
+
+	<div class="rel_pos_guide_box">	
+		<div class="rel_pos rel_pos_2">
+			<p>position 1 <br>left 10rem </p>
+		</div>	
+
+		<div class="rel_pos rel_pos_3">
+			<p>position 2 <br> top 10rem</p>
+		</div>
+
+		<div class="rel_pos rel_pos_4">
+			<p>position 3 <br>bottom 10rem </p>
+		</div>
+	</div>
+</div>
+			
+<div class="abs_pos_parent">
+	<div class="abs_pos_info">
+		<p>ABSOLUTE POSITIONING<br> absolute position will adjust the element relative of it's parent, if the parent is relative, absolute, sticky or fixed. If a parent is not present then it will be adjusted based on the viewport. and does not leave any information in it's default position. this will cause elements to stack ontop of eachother, with the latest element in the code being ontop.
+		</p>
+	</div>
+	
+	<div class="abs_pos_box">
+		<div class="abs_pos_guide_box">
+			<div class="abs_pos">
+				<p>
+					position 1,2,3&4<br>default
+				</p>	
+			</div>
+			
+		</div>
+		<div class="abs_pos_guide_box">
+			<div class="abs_pos abs_pos_1">
+				<p>
+					position 1<br>left 10rem
+				</p>	
+			</div>
+			<div class="abs_pos abs_pos_2">
+				<p>
+					position 2<br>right 10rem
+				</p>	
+			</div>
+			<div class="abs_pos abs_pos_3">
+				<p>
+					position 3<br>top 10rem
+				</p>	
+			</div>
+			<div class="abs_pos abs_pos_4">
+				<p>
+					position 4<br>bottom 10rem
+				</p>	
+			</div>
+		</div>
+	</div>
+</div>	
+			
+<div class="text_align">
+	<p> This text is aligned using text align</p>
+	<p> This will only work with block elements with no specified width. 
+	</p>
+	<p class="blc_elm_wdth"> example of block element with a width </p>
+</div>	
+
+<div class="centering">
+	<p class="cntr_ele"> you can center elements of a specific width with margin:auto </p> 
+</div>	
+			
+<div class="float_pos">
+		<p>Floats are mainly used to orient text in a way of wrapping. sort of out dated method <p>
+	<div class="float_box">
+		<div class="float_ele">
+			<p> box1 default (random text for different size boxes)</p>
+		</div>
+		<div class="float_ele">
+			<p> box2 default</p>
+		</div>	
+	</div>	
+	<div class="float_box">
+		<div class="float_ele float_txt">	 
+			<p> box1 with float (random text for different size boxes) </p>
+		</div>
+		<div class="float_ele float_txt">
+			<p> box2 with float </p>
+		</div>
+	</div>	
+</div>
+			
+<div class="flex_display">
+	<p>FLEX DISPLAY <br>
+		<a 
+			 href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+			 target="_blank"
+			 >flex tricks & tips</a><br>
+		Flex display( display:flex ) is a better way to organize elements within a box. <br>
+		is type aware, however is only one dimensional.<br><br>
+
+		"flex-basis" is used to adjust the the size of the children in the flex box, if row is specified then the width of the children is adjusted. If column is selected, then the height is adjusted.<br><br>
+		*** flex-basis is used within the children styles, not on the parent flex-box ***<br><br>
+		Inline flex is used when the width is meant to be the size of the content.<br><br>
+		order:<br>
+		This is used to adjust the position of the child elements in CSS.<br><br>
+		flex-wrap: wrap;<br>
+		This is used to wrap around all the children of the flex box. This will cause items to drop down a row if they would normally no longer fit on the webpage. Arranging them from top left to bottom right.<br>
+		flex-wrap: wrap-reverse;<br>
+		This does the same as "flex-wrap" but from the bottom. Arranging them from the bottom right to the top left.<br><br>
+		
+	</p>	
+	
+	<div class="flex_box_container">
+		<div class="flex_box">	
+			<div class="flex_ele">
+				<p> flex element 1 default
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 default
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 default
+				</p>
+			</div>
+		</div>
+
+		<div class="flex_box flex_container ">	
+			<div class="flex_ele">
+				<p> flex element 1 no direction & no justify
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 no direction & no justify
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 no direction & no justify
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex_box_container">
+		<div class="flex_box flex_column">	
+			<div class="flex_ele">
+				<p> flex element 1 flex-direction:column
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 flex-direction:column
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 flex-direction:column
+				</p>
+			</div>
+		</div>
+
+		<div class="flex_box flex_row">	
+			<div class="flex_ele">
+				<p> flex element 1 flex-direction:row
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 flex-direction:row
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 flex-direction:row
+				</p>
+			</div>
+		</div>
+
+			<div class="flex_box flex_col_rev">	
+			<div class="flex_ele">
+				<p> flex element 1 flex-direction:column-reverse
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 flex-direction:column-reverse
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 flex-direction:column-reverse
+				</p>
+			</div>
+		</div>
+	</div>
+	
+		<div class="flex_box_container">
+		<div class="flex_box flex_align_st">	
+			<div class="flex_ele">
+				<p> flex element 1 align-items:flex-start;
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 align-items:flex-start;
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 align-items:flex-start;
+				</p>
+			</div>
+		</div>
+
+		<div class="flex_box flex_align_cen">	
+			<div class="flex_ele">
+				<p> flex element 1 align-items:flex-center;
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 align-items:flex-center;
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 align-items:flex-center;
+				</p>
+			</div>
+		</div>
+
+			<div class="flex_box flex_align_end">	
+			<div class="flex_ele">
+				<p> flex element 1 align-items:flex-end;
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 align-items:flex-end;
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3align-items:flex-end;
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex_box_container">
+		<div class="flex_box flex_row_rev">	
+			<div class="flex_ele">
+				<p> flex element 1 flex-direction:row-reverse
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 flex-direction:row-reverse
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 flex-direction:row-reverse
+				</p>
+			</div>
+		</div>
+	
+	
+		<div class="flex_box flex_just_start">	
+			<div class="flex_ele">
+				<p> flex element 1 justify-content:start
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 justify-content:start
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 justify-content:start
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex_box_container">	
+		<div class="flex_box flex_just_cen">	
+			<div class="flex_ele">
+				<p> flex element 1 justify-content:center
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 justify-content:center
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 justify-content:center
+				</p>
+			</div>
+		</div>
+
+		<div class="flex_box flex_just_sp_arnd">	
+			<div class="flex_ele">
+				<p> flex element 1 justify-content:space-around
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 justify-content:space-around
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 justify-content:space-around
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="flex_box_container">
+		<div class="flex_box flex_just_sp_even">	
+			<div class="flex_ele">
+				<p> flex element 1 justify-content:space-evenly
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 justify-content:space-evenly
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 justify-content:space-evenly
+				</p>
+			</div>
+		</div>
+
+		<div class="flex_box flex_just_sp_bet">	
+			<div class="flex_ele">
+				<p> flex element 1 justify-content:space-between
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 2 justify-content:space-between
+				</p>
+			</div>
+			<div class="flex_ele">
+				<p> flex element 3 justify-content:space-between
+				</p>
+			</div>
+		</div>
+	</div>
+</div>	
+			
+<div class="grid_box">
+	<p> GRIDS <br> 
+		this is the bomb and the best way to organize a webpage. <br>
+		create specified rows and columns to help keep the webpage all aligned correctly.<br>
+		also able to be controlled in two dimensions, vs flex box.
+	</p>
+	<p> GRID TRACKS <br>
+		these are the rows and columns of the grid
+
+		<div class="grid_info">
+		 this is using 5 auto sized columns and auto sized rows. 
+		</div>
+		
+	<div class="grid_layout grid_layout_1">
+		<div class="grid_ele grid_ele_1">
+			<p> grid element 1 <br>
+				grid-column:1; <br>
+				grid-row:1;
+			</p>
+		</div>
+		<div class="grid_ele grid_ele_2">
+			<p> grid element 2 <br>
+				grid-column:2; <br>
+				grid-row:2;
+			</p>
+		</div>
+		<div class="grid_ele grid_ele_3">
+			<p> grid element 3 <br>
+				grid-column:3; <br>
+				grid-row:3; </p>
+		</div>
+		<div class="grid_ele grid_ele_4">
+			<p> grid element 4 <br>
+				grid-column:4; <br>
+				grid-row:4; 
+			</p>
+		</div>
+		<div class="grid_ele grid_ele_5">
+			<p> grid element 5 <br>
+				grid-column:5; <br>
+				grid-row:5;
+			</p>
+		</div>
+	</div>
+	
+	<div class="grid_info">
+		the grid can allow for custom row & column sizes, allowing for varrying children sizes, even overlaps. Also gutters can be added to allow space between the children.
+
+	</div>	
+	
+		<div class="grid_layout grid_layout_2">
+		<div class="grid_ele grid_ele_2_1">
+			<p> grid element 1 <br>
+				grid-column:1; <br>
+				grid-row:1;
+			</p>
+		</div>
+		<div class="grid_ele grid_ele_2_2">
+			<p> grid element 2 <br>
+				grid-column:2 / 5; <br>
+				grid-row:2 / 5;
+			</p>
+		</div>
+		<div class="grid_ele grid_ele_2_3">
+			<p> grid element 3 <br>
+				grid-column:3 / 6; <br>
+				grid-row:3; </p>
+		</div>
+		<div class="grid_ele grid_ele_2_4">
+			<p> grid element 4 <br>
+				grid-column:1 / 4; <br>
+				grid-row:4; 
+			</p>
+		</div>
+		<div class="grid_ele grid_ele_2_5">
+			<p> grid element 5 <br>
+				grid-column:5; <br>
+				grid-row:4 /6;
+			</p>
+		</div>
+	</div>
+	
+</div>	
+			
+<!-- JAVA SCRIPT -->
+			
+			<h1 id="js_nav" class="dividers"> JAVA SCRIPT </h1>		
+			<p class="attn"> JAVASCRIPT & DOM USE CAMELCASING FOR DECLARATIONS. </p>
+			
+			<p> <span class="jstitle">typeof()</span>
+				use this keyword to identify the datatype 
+			</p>
+			
+			<p> <span class="jstitle"> Strings </span> are data types that are created using quotation marks <br>
+				declaration <br>
+				"string"
+			</p>
+			
+			<p> <span class="jstitle"> booleans </span><br>
+				"true" and "false" values.
+			</p>
+			
+			<p> <span class="jstitle"> Converting strings to Numbers </span><br>
+				Number(string);
+			</p>
+
+				
+			<p> <span class="jstitle">String Concatenation </span> is basically how we combine strings <br>
+				declaration <br>
+				"string 1" + "string 2" <br>
+				this would result in: <br>
+				string 1 string 2 <br>
+				to fix this be sure to use spaces in the strings: <br>
+				"string 1 " + "string 2"
+			</p>
+			
+			<p> <span class="jstitle">Alerts</span> create a popup window. <br>
+				declaration <br>
+				alert ("string");		</p>
+			
+			<p> <span class="jstitle"> Prompts </span> create a popup window with a field to enter information. <br>
+				declaration<br>
+				prompt ("string");	</p>	
+			
+			<p> <span class="jstitle"> Variables(var)</span> an data type that can change the data <br> 
+				declaration<br>
+				var variablename = value <br>
+				this value can be anything from strings to other elements</p>
+			
+			<p> <span class="jstitle"> .length </span> is used to keep track of the amount of characters used in a specified section. <br>
+				declaration<br>
+				var.length<br>
+			</p>
+			
+
+			<p> <span class="jstitle"> .slice(x,y) </span> is the ability to slice out a specified section of a string based on specified character amounts. <br>
+				declaration<br>
+				var.slice(x,y)<br>
+				when declaring amounts the first position in a string can be as low as 0 (which is the first position). the second value defines the character you would like to go upto but not exceed. <br>
+				it is important to remember that 0 counts as a number therefore if the string was "12345" and .slice(0,2) was used, the result would be "12". <br>
+				you can also use other operations instead of numbers for exampe slice(1,var.length)
+			</p>
+			
+			<p> <span class="jstitle"> .toupperCase() & .tolowercase() </span>
+				is used to either change the string to upper case or lower case <br>
+				declaration <br>
+				var.toUpperCase() <br>
+				var.toLowerCase() 
+			</p>
+			
+			<p> <span class="jstitle"> MATH </span><br>
+				Addition = "+" <br>
+				Subtraction = "-" <br>
+				Multiplication = "*" <br>
+				Division = "/" <br>
+				Modulo = "%" <br><br>
+				
+				Math.floor()<br>
+				this rounds the number in the brackets down to the nearest whole number.<br><br>
+				
+				Math.round()<br>
+				rounds the number in the backets to the nearest integer.<br><br>
+				
+				Math.pow(number,exponent) or ** <br>
+				for using exponents.<br><br>
+				
+				Math.random();<br>
+				generates a random number between 0 and 1 up to 16 decimal places.<br><br>
+				
+			</p>
+			
+			<p> <span class="jstitle"> Modulo "%" </span>
+				does division but only uses the amount the denominator can wholy enter the numerator and the result of this math will be the remainder of the fuction <br>
+				declartion <br>
+				var = 11 % 3 <br>
+				the result of this would be 2 as 3 can go into 11 three times (therefore 9 is the result) leaving a remander of 2.
+			</p>
+				
+			<p> <span class="jstitle"> Increment (++) & decrement (--)</span> is a short had to write var = var + 1 <br>
+				therefore instead of writing var = var + 1
+				we can write var++ <br>
+				using "++" is a positive increment of 1 whereas "--" is a decrement of 1<br><br>
+				<span class="jstitle"> IMPORTANT!</span><br>
+				when this is used in this circumstance:<br>
+				x = 3<br>
+				y = x++<br>
+				y will be 3 and x will be 4 <br>
+				this is because the operation will set y=x before x is incremented.<br>
+				To have x incremented before y is set to x then it will have to be written:<br>
+				y=++x
+			</p>
+			
+			<p> <span class="jstitle"> Other increments </span> <br>
+				To add a increment or decrement of a specific amount the following can be used: <br>
+				"+=" for addition <br>
+				"+-" for subraction <br>
+				"*=" for multiplication <br>
+				"/=" for division <br>
+				
+				these would be writtin like the following:<br>
+				var a += var b<br>
+				and the result would be var a being increased by var b and then being set to that value<br>
+				</p>
+			
+			<p> <span class="jstitle"> Functions </span><br>
+				Functions are used to repeat a section of code.<br>
+				declaration to create a function<br>
+				function function_name(){code}<br><br>
+				declaration to call a function<br>
+				function_name();<br>
+				
+			</p>
+			
+			<p> <span class="jstitle"> Input into Function </span><br>
+				when declaring a function a input can be adding into the function name. <br>
+				delcaration for creating the function with input<br>
+				function function_name(input){code}<br><br>
+				this input acts as a variable within the functions code and will change based on what is inserted when calling the function. <br>
+				declaration for calling the function with input<br>
+				function(input);<br><br>
+				Example:<br>
+				function order_pizza(amount){
+				var slices = amount * 8;
+				}<br><br>
+				now calling the function will change the input.<br>
+				order_pizza(3);<br><br>
+				anywhere in the function where "amount" is being used will now be replaced with "3" in this instance of calling the function. which means the function would return a value of "24" for the variable "slices".<br><br>
+				multiple values can be entered into a function and utilized by doing the following:<br>
+				function function_name(input_1, input_2);<br><br>
+				and now by calling the funtion we can enter values for the inputs.<br>
+				function__name(input_1, input_2);
+				
+			</p>
+			
+			<p> <span class="jstitle"> Return values </span> <br>
+				returns the value of a function back to the call <br>
+				declaration<br>
+				return var/function<br><br>
+				example:<br>
+		calculating number of items one can buy with a given amount of money and returning the amount of change.<br><br>
+				
+				function buy_items (money){<br>
+				console.log("buy " + calc_items(money, item_cost) + " items");<br>
+				return calc_change(money, item_cost);<br>
+				}<br><br>
+				
+				function calc_items(starting_money, cost_per_item){<br>
+				var number_of_items = Math.floor(starting_money/cost_per_item);<br>
+				return number_of_items<br>
+				}<br><br>
+				
+				function calc_change(starting_money, cost_per_item){<br>
+				var change = starting_money % cost_per_item;<br>
+				return change<br>
+				}<br><br>
+				
+				var item_cost = 1.5; <br>
+				var money_given = 4; <br>
+				var change = buy_items(money_given);<br>
+				console.log("you have $" + change + " in change." );<br>
+			</p>
+			
+			<p> <span class="jstitle"> Dates </span><br>
+				new Date(); can be used to log the current date. <br>
+				if a date is specific in the order of year-month-date in the form of 0001-01-01 within the brackets of new Date(); then that date will be logged. <br>
+				example<br>
+				new Date(0001-01-01);<br><br>
+				
+				these values can then be used to achieve specific information, such as:<br>
+				getMonth(); for the month of the year.<br>
+				getDay(); for the day of the week.<br>
+				getDate(); for the day of the month. <br>
+				getHours(); for the hour of the day. <br>
+				getMinutes(); for the minute of the hour. <br>
+				getSeconds(); for the seconds of the minute. <br>
+				getMilliseconds(); for the milliseconds of a second. <br>
+				getTime(); for the amount of Milliseconds since January 1st 1970 for a specified date.<br>
+				Date.now(); for the current amount of milliseconds since January 1st 1970.<br><br>
+				The last two can be used for calculating the amount of time between two dates.
+			</p>
+				
+		
+			<p> <span class="jstitle">If-Else Logic </span><br>
+				if (var === value){}<br>
+				else{}<br>
+			</p>
+			
+			<p> <span class="jstitle"> Else if </span><br>
+			This is used to check multiple conditions and jump to the end once a condition is met.<br><br>
+				example:<br>
+var array = [];<br>
+var counter = 1;<br><br> 
+
+function fizz_buzz(){<br>
+    
+if (counter % 3 === 0 && counter % 5 ===0){<br>
+    array.push("fizzbuzz");<br>
+}<br>
+else if (counter % 3 === 0){<br>
+    array.push("fizz");<br>
+}<br>
+else if (counter % 5 === 0){<br>
+    array.push("buzz");<br>
+} <br>
+else {<br>
+    array.push(counter);<br> 
+}<br>
+    counter++;<br>
+    console.log(array);<br>
+}<br>
+
+fizz_buzz();
+				
+			</p>
+			
+			<p> <span class="jstitle"> Comparators & Equality </span><br>
+				== is Equal to, does not check matching data types <br>
+				=== is Equal to, also checks to ensure data types match <br>
+				!== is not Equal to <br>
+				> is Greater than <br>
+				< is Less than <br>
+				>= is Greater or Equal to <br>
+				<= is Less or Equal to <br>
+				<br>
+				<span style="color:green"> COMBINING COMPARATORS </span><br>
+				&& is AND<br>
+				|| is OR<br>
+				! is NOT<br><br>
+				
+				example:<br><br>	
+function leap_year(year){<br>
+if(year % 4 !== 0 || year % 100 === 0 && year % 400 !==0){<br>
+   year="not leap year.";<br> 
+}<br>
+else{<br> 
+    year = "leap year.";<br>
+}<br>
+    return year;<br>    
+}<br>    
+leap_year(30);<br>
+			</p>
+		
+			<p> <span class="jstitle"> Arrays </span> <br>
+				arrays are used to store a collection of items within a variable.<br><br>
+				
+				example:<br>
+				var items =[item_0, item_1, item_2, item_3, item_4];<br><br>
+				
+				calling the item <br>				
+				var target_item = items[1];<br>
+				this would call "item_1" as counting always begins at 0 <br><br>
+				
+				to retrieve the total number of items in an array <br>
+				items.length;<br>
+				would be used<br><br>
+				
+				to find out if an array includes a specif item<br>
+				items.includes(item_1);<br>
+				would be used<br>
+				this will return a value of "true" if it finds the item or "false" if it does not.<br>
+				
+			</p>
+				
+			<p> <span class="jstitle"> Arrays: Push & Pop </span><br>
+			push is used to add an item to an array, this item is added at the end of the array.<br><br>
+				example:<br>
+				var array = [];<br>
+				array.push(1);<br>
+				array.push(2);<br>
+				this would result in the array now being:<br>
+ 				array (2) [1,2]<br>
+				which means there are 2 values in this array and those values are "1" & "2";<br><br>
+				
+				pop is used to remove a item from the array instead<br>
+				example:<br>
+				array.pop;<br>
+				this would remove the last item in the array, which in this case would be "2"
+				
+			</p>
+			
+			<p> <span class="jstitle"> Using arrays in functions </span><br>
+				example:<br>
+				function whosPaying(names){ <br>
+var num = Math.floor(Math.random()*names.length); <br>
+return names[num] + " is going to buy lunch today"; <br>   
+}<br>
+whosPaying(["Angela","Ben","Jenny","Micheal","Chloe"]);<br>
+				
+			</p>
+			
+			<p> <span class="jstitle"> While Loops </span><br>
+			While loops repeat a function until the parameters are false.<br><br>
+				example:<br>
+				while(something is true){<br>
+				do stuff<br>
+				}<br><br>
+				
+				code example:<br>
+var beer_num = 99;<br>
+function beer(){<br>
+while (beer_num > 0){<br>
+ if (beer_num > 1){<br>
+ console.log(beer_num + " bottle of beer on the wall, " + beer_num + " bottles of beer. Take 1 down, pass it around, " + (beer_num - 1) + " bottles of beer on the wall.");<br>
+ }<br>
+ else{<br>
+ console.log(beer_num + " bottle of beer on the wall, " + beer_num + " bottles of beer. Take 1 down, pass it around, no more bottles of beer on the wall.");<br>
+ }<br>
+ beer_num--;<br> 
+}<br>
+ console.log("no more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall");<br>
+}<br>
+beer();<br>
+			</p>
+			
+			<p> <span class="jstitle"> For Loops </span><br>
+			works similar to a "while loop" but instead of checking for a false parameter, it runs a specified number of times.<br><br>
+				example:<br>
+				for (var=0; var<2; var++){<br>
+				do stuff<br>
+				}<br>
+				var=0, is the starting point for the loop. So "0".<br>
+				var<2, is the end point for the loop. So it will run until var is greater than "2".<br>
+				var++, is the change in the variable each loop. So increasing by "1" each loop.<br>
+				
+			</p>
+
+<!--	DOM -->		
+<h1 id="DOM_nav" class="dividers"> DOM(document object model)</h1>
+			
+<p class="attn"> JAVASCRIPT & DOM USE CAMELCASING FOR DECLARATIONS. 			
+			
+			<p><span class="dom_h1">what is this?</span><br>
+				the document object model is used to insert javascript into a website.
+			</p>
+			
+			<p><span class="dom_h1">methods to insert</span><br>
+				<span class="dom_h2"> inline </span><br>
+				onload="alert('hello');"<br>
+				<span class="dom_h2">internal</span><br>
+				&ltscript type="text/javascript"&gt <br>
+				alert("hello");<br>
+				&lt/script&gt<br>
+				<span class="dom_h2">external</span><br>
+				&ltscript src="index.js" charset="utf-8"&gt&lt/script&gt<br>
+			this position is to be placed after the html element you want it to be applied to.<br>
+			</p>
+			
+			<p> <span class="dom_h1"> objects in the DOM </span><br>
+			objects in the DOM have two characteristics. <br>
+				<br><span class="dom_h2"> Properties </span><br>
+				Properties describes something about the object.<br> 
+				<span class="dom_ex">getting a property value example:</span><br>
+				var.colour;<br>
+				<span class="dom_ex">setting a property value example:</span><br>
+				var.colour = red;<br>
+				
+				<br><span class="dom_h2">Methods </span><br>
+				Methods are what the object can do.<br>
+						<span class="dom_ex">example of a method:</span><br>
+				var.move();<br>
+			</p>
+			
+			<p><span class="dom_h1">Getting elements</span><br>
+				<span class="dom_h2">.getElementsByTagName()</span><br>
+				<span class="dom_ex">example:</span><br>
+				document.getElementsByTagName("id");<br><br>
+				will fetch all elements with the specified "tag" name and display them as an array.<br>
+				to select a specific item from the elements document.getElementsByTagName("li")[2] would be used, in this case the second item would be selected.<br><br>
+				
+				<span class="dom_h2">.getElementsByClassName()</span><br>
+				<span class="dom_ex">example:</span><br>
+				document.getElementsByClassName("main_class");<br><br>
+				will fetch all elements with the specified "Class" name and display them as an array.<br>
+				to select a specific item from the elements document.getElementsByClassName("main_class")[2] would be used, in this case the <span class="highli"> THIRD</span> Element would be selected.<br><br>
+				
+				<span class="dom_h2">.getElementsById()</span><br>
+				ex: document.getElementsById("id_1");<br>
+				will fetch all a sinigle element with the "Id" as Id's should only be used once<br><br>
+			
+				<span class="dom_h2">.querySelector()</span><br>
+				<span class="dom_ex">example:</span><br>
+					document.querySelector("h1" or ".class_name" or "#id_name");<br><br>
+				this can be used to search for a Element, Class, or Id, and will return the first element meeting this criteria.<br>
+				*** Multiple fields of input can be used to specify the target ***<br>
+				<span class="dom_ex">example:</span><br>
+				document.querySelector("li a";)<br><br>
+				a "space" must be added between each item if the tagets occur in different elements.<br>
+				<span class="dom_ex">example:</span><br>
+					document.querySelector("li.class_name");<br><br>
+				a "space" is not needed when the targets are within the same element.<br><br>
+				When ALL of the Elements with the same speicification want to be selected ".querySelectorALL" is used instead. This will display the Elements in a Array.<br>
+				selecting a specific Element in the Array would be done as so:<br>
+				document.querySelectorAll("#list .item")[2];<br>
+				this would go into the unordered list with the ID "list" and select the <span class="highli">THIRD</span> list item with the class name "item".
+			</p>
+			
+			<p><span class="dom_h1">Changing object styles with the DOM.</span><br>
+				<a href="https://www.w3schools.com/jsref/dom_obj_style.asp" target="_blank">Style names</a><br>
+				
+				<span class="dom_ex">Example:</span>
+				var.style.color = "white";<br>
+				Style values need to be declared as strings, instead of just typing it out.<br><br>
+				
+				<span class="dom_h2">Adding CSS classes to elements using JS</span><br>
+				
+					by using the ".classlist" with a attached method we are able to manipulate the classes assosiated with the element.<br>
+				<span class="dom_ex">example:</span><br>
+				document.querySelector("button").classlist.add("invisible");<br><br>
+				this will add the class "invisible" to the button element.<br>
+				other methods include "remove" & "toggle".<br>
+					</p>
+			
+			<p><span class="dom_h1">.innerHTML & .textContent</span><br>
+				<span class="dom_h2">.innerHTML</span> will allow everything within the elements tags to be selected and editied.<br>
+				<span class="dom_h2">.textContent</span> will only select the text within the elements tags.<br>
+				
+			</p>
+			
+			<p><span class="dom_h1">Manipulating HTML Element Attributes</span><br>
+				<span class="dom_h2"> .attributes </span> will return all the attributes assosiated with a Element.<br>
+				<span class="dom_h2"> .getAttribute("attributeName") </span> will return the value of the specified attribute within the Element. <br>
+				<span class="dom_h2"> .setAttribute("attributeName", "new value to be set") </span> will allow the value of the specified attribute within the Element to be changed. <br>
+			</p>	
+			
+			<p><span class="dom_h1">Event Listeners</span><br>
+				Event Listeners are used to tell the code when a certain input is giving.<br>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/Events" target="_blank">EVENT TYPES</a><br>
+				<span class="dom_ex">example:</span><br>
+				document.querySelector("button").addEventListener("click", function);<br><br>
+				***when using functions in event listeners be sure to not include the "()" after the function name***<br>
+				a good practive is to use a "random function" in the event listener for specific functions related to that Event Listener.<br>
+				<span class="dom_ex">example:</span><br>
+				document.querySelector("button").addEventListener("click", function() {<br>
+				alert("i got clicked");<br>
+				})<br><br>
+				
+				<span class="dom_ex">Example of use:</span><br>
+				
+var num_of_keys = document.querySelectorAll(".drum").length;<br>
+for (var keys = 0; keys<num_of_keys; keys++){<br>
+document.querySelectorAll(".drum")[keys].addEventListener("click", function(){<br>
+    alert("i got clicked!");<br>
+});<br>    
+}<br>		
+			</p>
+			
+			<p><span class="dom_h1">Higher order Functions</span><br>
+				Higher order functions are a way to create more specific and complicated functions.<br>
+				A use for this is also flexibility, you are able to add "operators" that can be specified. These "operators" will then pass onto the function with the function name that matches the operator.<br>
+				<span class="dom_ex">example:</span><br>
+				function add(num1,num2){<br>
+    		return num1 + num2;<br>
+				}<br>
+				function multiply(num1,num2){<br>
+    		return num1 * num2;<br>
+				}<br>
+				function calculator(num1,num2,operator){<br>
+    		return operator(num1,num2);<br>
+				}<br><br>
+				<span class="dom_ex">using the function calculator:</span><br>
+				calculator(1,2,multiply);<br><br>
+				this would set "num1" to "1" and "num2" to "2" and then input these values into the "multiply" function.
+				
+	</p>
+			
+			<p><span class="dom_h1"> HTML Audio Element </span><br>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLAudioElement" target="_blank">Info on Adio Elements</a><br>
+				<span class="dom_ex">Example:</span><br>
+				var audio = new Audio('audiofile');<br>
+				audio.play();<br>
+			</p>
+			
+			<p><span class="dom_h1">Advanced Java Script Objects</span><br>
+				<span class="dom_h2">Java Script Objects</span><br>`
+				These are used to contain multiple properties and their values within a single variable.<br>
+				<span class="dom_ex">example:</span><br>
+				var var_object = {<br>
+				string: "name",<br>
+				number: 28,<br>
+				boolean: true,<br>
+				array:["item_1","item_2","item_3","item_4"]<br>
+				}<br><br>
+				
+				<span class="dom_h2">Constructor Functions</span><br>
+				These are used in cases where the same properties are to be used for multiple variables.<br><br>
+				*** when creating the function name the <span class="highli">First Letter Needs to be Capitalized</span> ***<br><br>
+				<span class="dom_ex">Example:</span><br>
+				function Constructor_func_name(string,number,boolean,array){<br>
+				this.string = string;<br>
+				this.number = number;<br>
+				this.boolean = boolean;<br>
+				this.array = array;<br>
+				}<br><br>
+				
+				<span class="dom_h3"> Initialise New Object from Constructor Function</span><br>
+				The keyword "new" is now used along with the Constructor Function to assign all the properties of the Constructor Function with defined Values to a New Variable.<br><br>
+				<span class="dom_ex">Example:</span><br>
+				var var_name_1 = new Constructor_func_name("name", 28, true, ["item_1", "item_2", "item_3"]);<br><br>
+				
+				<span class="dom_h2"> Objects with Methods</span><br>
+				When you want a "method"(do something) attached to a object via a function the following is done.<br><br>
+				<span class="dom_ex">Example:</span>
+				var var_object = {<br>
+				string: "name",<br>
+				number: "28",<br>
+				boolean: "true",<br>
+				array: ["item_1","item_2"],<br>
+				func_name: function(){<br>
+				alert("pop up message");<br>
+				}<br>
+				}<br><br>
+				
+				<span class="dom_h3"> Calling a Object with a Method</span><br> 
+				The key difference when calling a Method with a Object is the <span class="highli"> Parentheses()</span><br>
+				<span class="dom_ex">Example:</span><br>
+				var_object.func_name();<br><br>
+				
+				<span class="dom_h3"> Constructor Function with a Method</span><br>
+				<span class="dom_ex">Example:</span><br>
+				function Constructor_func_name(string,number,boolean,array){<br>
+				this.string = string;<br>
+				this.number = number;<br>
+				this.boolean = boolean;<br>
+				this.array = array;<br>
+				this.func_name: function(){<br>
+				alert("pop up message");<br>
+				}<br>
+				}<br><br>
+			</p>
+			
+			<p><span class="dom_h1">Switch Statements</span><br>
+				Switch statements are used to check for a variety of events and will do a specified action when a specified action occurs. This is more of a streamline method instead of writing a bunch of "if-else" statements.<br><br>
+				<span class="dom_ex">Example:</span><br>
+				switch("target"){<br>
+				case "value":<br>
+				"input what you would want to do here"<br>
+				break;<br><br>
+				default:<br>
+				"what to happen if none of the cases are selected"<br>
+				break;<br>
+				}<br><br>
+				Multiple cases can be created to allow for a wide variety of scenarios to look for.
+			</p>
+			
+			<p><span class="dom_h1">keydown Event Listeners </span><br>
+				<a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event" target="_blank">keydown event info</a><br>
+				<span class="dom_ex">Example:</span><br>
+				document.addEventListener("keypress", function(event){<br>
+				var key_input = event.key;<br>
+				}<br>
+				)<br>
+			</p>
+			
+			<p><span class="dom_h1">setTimeout</span><br>
+				<a href="https://www.w3schools.com/jsref/met_win_settimeout.asp" target="_blank">
+					setTimeout Info</a><br>
+				this is used to add a delay before you want something to happen.<br><br>
+					<span class="dom_ex">Example:</span><br>
+				    setTimeout(<br>
+        function(){<br>
+        active_button.classList.remove("pressed");<br>
+        }<br>
+        ,<br>
+        100<br>
+        )<br>
+			</p>
+<!-- partial -->
+  
+</body>
+</html>
